@@ -2,7 +2,7 @@
 
 int main (int argc, char **argv, char **envp)
 {
-	printf("%s\n", envp[0]);	
-	printf("%s\n", envp[1]);	
+	while (*envp)
+		printf("%s\n", *envp++);
 	return 0;
 }
